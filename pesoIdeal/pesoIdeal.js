@@ -7,4 +7,12 @@ function calcularIMC() {
     var pesoArredondado = parseFloat(pesoIdeal.toFixed(2))
     alert("O seu peso ideal é: " + pesoArredondado + "Kg")
   }
-}
+  else if (sexo == "M" || sexo == "m") {
+    var pesoIdeal = (72.7 * altura) - 58;
+    var pesoArredondado = parsefloat(pesoIdeal.toFixed(2))
+    alert("O seu peso ideal é: " + pesoArredondado + "Kg")
+  }
+  else {
+    alert("Erro! Tente novamente.")
+  }
+ }
